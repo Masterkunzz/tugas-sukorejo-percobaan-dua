@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guru Panel Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+</head>
+<body>
+
+    <div id="loginSection" class="card">
+        <h2>Login Guru</h2>
+        <p>(ntar nilai siswa masuk sesuai nama)</p>
+        <input id="usernameInput" placeholder="Username Guru">
+        <button onclick="loginUser()">Masuk Panel</button>
+    </div>
+
+    <div id="dashboardSection" style="display:none;">
+        <h1>samlekom bapak: <span id="displayUser"></span></h1>
+        <button onclick="logout()" style="background:red; margin-bottom:10px;">Ganti User</button>
+
+        <section class="card">
+            <h2>Buat Ujian PG</h2>
+            <label>Judul Ujian:</label>
+            <input id="examTitle" placeholder="Tulis judul disini">
+
+            <label>Input Soal:</label>
+            <p style="font-size: 0.8em; color: #555;">
+                Format: SOAL | PILlIHAN(koma) | JAWABAN BENAR<br>
+                Contohmya : Ibukota Indonesia? | Jakarta,Bandung,Bali,Medan | Jakarta
+            </p>
+            <textarea id="qaInput" style="height: 150px;" placeholder="format harus bener ya, termasuk spasi"></textarea>
+
+            <button onclick="generateExam()">Generate Link Ujian</button>
+            <div id="generatedLink"></div>
+        </section>
+
+        <section class="card">
+            <h2>Riwayat Nilai Siswa</h2>
+            <button onclick="clearData()" style="background: orange;">Hapus Data Anak Murid Saya</button>
+            <table id="scoreTable">
+                <thead>
+                    <tr>
+                        <th>Siswa</th>
+                        <th>Ujian</th>
+                        <th>Skor</th>
+                    </tr>
+                </thead>
+                <tbody id="scoreBody"></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

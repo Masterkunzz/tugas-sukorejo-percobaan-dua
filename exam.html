@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Siswa page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+</head>
+<body>
+    <h1 id="examTitleDisplay">Loading Soal...</h1>
+
+    <section class="card">
+        <label>Nama Kamu:</label>
+        <input id="studentName" placeholder="Tulis nama kau">
+    </section>
+
+    <form id="examForm" class="card"></form>
+
+    <button onclick="submitExam()">Kirim Jawaban</button>
+
+    <script src="exam.js"></script>
+</body>
+</html>
