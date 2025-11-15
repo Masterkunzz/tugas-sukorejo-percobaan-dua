@@ -21,7 +21,7 @@ Aplikasi ini punya 2 halaman utama: [index.html] (buat Guru) dan [exam.html] (bu
 1. Panel Guru (index.html)
 
 - guru buka halaman Utama dan di tanyai nama (cth. Bambang,Yanto,dst)
-  (note : nama guru ni udah kek folder pak, jadi salah nama guru = ganti folder alias gabisa akses data)
+  `(note : nama guru ni udah kek folder pak, jadi salah nama guru = ganti folder alias gabisa akses data)`
 
 - Data guru ini disimpen di Firebase di: `https://sukorejo-tugas-default-rtdb.asia-southeast1.firebasedatabase.app/`
 - Guru nulis Judul Ujian dan Soal. Format soalnya: Pertanyaan | PilihanA,PilihanB,PilihanC | JawabanBenar
