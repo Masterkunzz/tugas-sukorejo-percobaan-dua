@@ -2,6 +2,7 @@ bismillah, sebelumnya mohon maaf kalua penulisan di readme ini sulit dimengerti,
 
 NAMA PROYEK : UjikanDulu - Solusi Ulangan Harian
 LINK BUAT COBA : https://tugassukorejo.masterahmad.site
+
 Ini adalah aplikasi untuk ujian harian online, simple aja sii.. kan kalua mau ribet ribet pake server sekolah  iasanya buat ujian skala besar aja, nah untuk skala kecilnya pake ini aja, biar guru bisa ngasi ujian semacam ini hamper tiap hari, tapi ttep professional karena pakai domain sekolah/domain jurusan
 
 Tanpa pake backend ribet, intinya semua data lari ke firebase google (Realtime Database).
